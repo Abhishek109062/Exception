@@ -5,8 +5,8 @@ public class integer {
         v = Math.sqrt(-100);
 
         Integer a= 2147483647;
-        Integer obj=Integer.valueOf(100);
-        Integer obj1=Integer.valueOf(100);
+        Integer obj= 100;
+        Integer obj1= 100;
         System.out.println(a);
         System.out.println(v);
         try
@@ -21,6 +21,7 @@ public class integer {
         finally
         {
             System.out.println("dfdf");
+
         }
     }
 }
