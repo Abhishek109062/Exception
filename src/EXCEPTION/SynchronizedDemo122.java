@@ -24,9 +24,11 @@ class Mythread extends Thread
     Account1 obj=null;
     public Mythread(Account1 t1)
     {
+
         obj=t1;
     }
     public void run()
+
     {
         obj.withdraw(500);
     }

@@ -3,10 +3,8 @@ package EXCEPTION;
 import java.util.Scanner;
 
 class Custom {
-    // we will not create Scanner class object in class
     int a, b, c;
     Custom() {
-        // delcare locally here
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number 1: ");
         this.a = sc.nextInt();
@@ -27,9 +25,6 @@ class  Del extends Exception {
     {
         super(s);
     }
-//  public String getMessage() {
-//    return "Invalid Input-Please enter the integer only";
-//  }
 }
 
 class dude{
@@ -38,10 +33,8 @@ class dude{
 
             Custom obj = new Custom();
             obj.average_method();
-            // Exception Raised
             throw new Del("this is my custom exception ");
         }
-        // Exception handled
         catch(Exception e)
         {
             System.out.println(e.getMessage());
